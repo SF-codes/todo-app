@@ -124,6 +124,10 @@ button {
   left: 94%;
 }
 
+.list {
+  border-radius: 0.5rem;
+}
+
 /* .todoList .list .buttons .edit {
   width: 45px;
   margin: 0 4px;
@@ -138,11 +142,8 @@ button {
 
 .todoList .list .buttons .delete {
   font-size: 1.125rem;
-  font-weight: 700;
-  border-radius: 0 3px 3px 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
 }
 
 .todoList .list .buttons:hover {
