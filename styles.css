@@ -1,0 +1,195 @@
+:root {
+  --background: #1b1b1b;
+  --fontpurple: #845ec2;
+  --fontwhite: #f2f2f2;
+  --blue: #2c73d2;
+  --green: #008f7a;
+  --redhat: "Red Hat Display", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--redhat);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: var(--fontpurple);
+}
+
+h2 {
+  color: var(--fontwhite);
+}
+
+form {
+  display: flex;
+  flex: 1 1 0%;
+  padding: 2rem 1re;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input,
+li,
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* Add colors to color and placeholder colors */
+#task-input {
+  flex: 1 1 0%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  color: var(--fontwhite);
+  background-image: linear-gradient(to right, var(--blue), var(--green));
+}
+#task-input::placeholder {
+  color: var(--fontwhite);
+}
+
+/*add colors*/
+#task-submit {
+  background: var(--fontpurple);
+  font-size: 1.25rem;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  opacity: 0.6;
+  pointer-events: none;
+}
+#task-submit:hover {
+  opacity: 0.8;
+}
+#task-submit.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper {
+  margin: 120px auto;
+  max-width: 500px;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--blue), var(--green));
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.wrapper .todoList {
+  /* scroll bar */
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.todoList .list {
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+  position: relative;
+  background: var(--fontwhite);
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.todoList .list .buttons {
+  position: absolute;
+  left: 94%;
+}
+
+/* .todoList .list .buttons .edit {
+  width: 45px;
+  margin: 0 4px;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+} */
+
+.todoList .list .buttons .delete {
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.todoList .list .buttons:hover {
+  opacity: 0.8;
+}
+
+.todoList .list .buttons:active {
+  opacity: 0.6;
+}
+
+/* .todoList .list .edit {
+  background: red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.todoList .list .delete {
+  color: var(--fontpurple);
+  -webkit-background-clip: text;
+}
+
+.wrapper .footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.footer button {
+  border: none;
+  outline: none;
+  background: var(--fontpurple);
+  color: var(--fontwhite);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px 10px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.font-color {
+  color: var(--fontwhite);
+}
