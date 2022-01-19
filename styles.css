@@ -192,3 +192,9 @@ button {
 .font-color {
   color: var(--fontwhite);
 }
+
+@media screen and (max-width: 768px) {
+  #task-input {
+    margin-right: 0;
+  }
+}
