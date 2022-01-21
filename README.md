@@ -1,5 +1,7 @@
 # todo-app
-A to do list featuring adding tasks, deletion and tasks remaining
+A to do list featuring adding tasks, deletion, tasks remaining and button dimming with no current text input
+
+![Screenshot 2022-01-21 at 01-26-52 To-do App ](https://user-images.githubusercontent.com/82302032/150477391-dff79579-3f1a-4d80-9ecc-67ef034cdf2d.png)
 
 
 ### Links
