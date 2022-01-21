@@ -40,7 +40,6 @@ h2 {
 
 form {
   display: flex;
-  flex: 1 1 0%;
   padding: 2rem 1rem;
   max-width: 500px;
   width: 100%;
@@ -68,6 +67,7 @@ button {
 }
 #task-input::placeholder {
   color: var(--fontwhite);
+  opacity: 0.6;
 }
 
 /*add colors*/
