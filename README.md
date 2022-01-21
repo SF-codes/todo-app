@@ -5,7 +5,7 @@ A to do list featuring adding tasks, deletion, tasks remaining and button dimmin
 
 
 ### Links
-Live Site URL: file:///C:/Users/Shani/Documents/GitHub/todo%20app/index.html
+Live Site URL: https://sf-codes.github.io/todo-app/
 
 ### My process
 With clean organized code in mind, my process began with a plan, a written flowchart, and reading documentation to 
