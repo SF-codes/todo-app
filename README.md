@@ -23,4 +23,4 @@ refresh my mind on Local Storage.
 ### What I learned
 
 Fine tuning my DOM manipulation knowledge and researching different/more affective ways to place my code. 
-Learned pseudo classes! Long over do but the next best time is now.
+Learned pseudo classes! Long over due but the next best time is now.
